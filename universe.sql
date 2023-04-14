@@ -40,7 +40,7 @@ galaxy_id int,
 FOREIGN KEY(galaxy_id) REFERENCES galaxy(galaxy_id)
 );
 
-insert into star values(1,'Earth','Earth',true,true,20,1,true,2356,1),(2,'sun','sun',true,true,20,1,true,3358,2),(3,'Venus','Venus',true,true,20,1,true,2375,3),(4,'Jupiter','Jupiter',true,true,20,1,true,5478,4),(5,'Mars','Mars',true,true,20,1,true,6235,5),(6,'Uranus','Uranus',true,true,20,1,true,9578,6);
+insert into star values(1,'Earth','Earth',true,true,20,1,true,1),(2,'sun','sun',true,true,20,1,true,2),(3,'Venus','Venus',true,true,20,1,true,3),(4,'Jupiter','Jupiter',true,true,20,1,true,4),(5,'Mars','Mars',true,true,20,1,true,5),(6,'Uranus','Uranus',true,true,20,1,true,6);
 
 create table planet(
 planet_id int NOT NULL PRIMARY KEY,
@@ -55,7 +55,7 @@ distance_from_earth INT,
 FOREIGN KEY(planet_id) REFERENCES star(star_id)
 );
 
-insert into planet values(1,'gravity','gravity',true,true,20,1,true,2356,1),(2,'latitude','latitude',true,true,20,1,true,3358,2),(3,'longitude','longitude',true,true,20,1,true,2375,3),(4,'meteor','meteor',true,true,20,1,true,5478,4),(5,'meteorite','meteorite',true,true,20,1,true,6235,5),(6,'nebula','nebula',true,true,20,1,true,9578,6),(7,'orbit','orbit',true,true,20,1,true,2356,1),(8,'revolution','revolution',true,true,20,1,true,3358,2),(9,'satellite','satellite',true,true,20,1,true,2375,3),(10,'solar system','solar system',true,true,20,1,true,5478,4),(11,'shooting star','shooting star',true,true,20,1,true,6235,5),(12,'sphere','sphere',true,true,20,1,true,9578,6);
+insert into planet values(1,'gravity','gravity',true,true,20,1,true,1),(2,'latitude','latitude',true,true,20,1,true,2),(3,'longitude','longitude',true,true,20,1,true,3),(4,'meteor','meteor',true,true,20,1,true,4),(5,'meteorite','meteorite',true,true,20,1,true,5),(6,'nebula','nebula',true,true,20,1,true,6),(7,'orbit','orbit',true,true,20,1,true,1),(8,'revolution','revolution',true,true,20,1,true,2),(9,'satellite','satellite',true,true,20,1,true,3),(10,'solar system','solar system',true,true,20,1,true,4),(11,'shooting star','shooting star',true,true,20,1,true,5),(12,'sphere','sphere',true,true,20,1,true,6);
 
 create table moon(
 moon_id int NOT NULL PRIMARY KEY,
