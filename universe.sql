@@ -1,3 +1,51 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
+-- Dumped by pg_dump version 12.9 (Ubuntu 12.9-2.pgdg20.04+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+DROP DATABASE universe;
+--
+-- Name: periodic_table; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE universe WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
+
+
+ALTER DATABASE universe OWNER TO postgres;
+
+\connect periodic_table
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: elements; Type: TABLE; Schema: public; Owner: freecodecamp
+--
 
 create table universe(
 universe_id int NOT NULL PRIMARY KEY,
@@ -71,3 +119,7 @@ FOREIGN KEY(moon_id) REFERENCES planet(planet_id)
 );
 
 insert into moon values(1,'gravity','gravity',true,true,20,1,true,1),(2,'latitude','latitude',true,true,20,1,true,2),(3,'longitude','longitude',true,true,20,1,true,3),(4,'meteor','meteor',true,true,20,1,true,4),(5,'meteorite','meteorite',true,true,20,1,true,5),(6,'nebula','nebula',true,true,20,1,true,6),(7,'orbit','orbit',true,true,20,1,true,7),(8,'revolution','revolution',true,true,20,1,true,8),(9,'satellite','satellite',true,true,20,1,true,9),(10,'solar system','solar system',true,true,20,1,true,10),(11,'shooting star','shooting star',true,true,20,1,true,11),(12,'sphere','sphere',true,true,20,1,true,12),(13,'gravity','gravity',true,true,20,1,true,1),(14,'latitude','latitude',true,true,20,1,true,2),(15,'longitude','longitude',true,true,20,1,true,3),(16,'meteor','meteor',true,true,20,1,true,4),(17,'meteorite','meteorite',true,true,20,1,true,5),(18,'nebula','nebula',true,true,20,1,true,6),(19,'orbit','orbit',true,true,20,1,true,7),(20,'revolution','revolution',true,true,20,1,true,8);
+
+--
+-- PostgreSQL database dump complete
+--
