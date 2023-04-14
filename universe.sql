@@ -18,7 +18,7 @@ SET row_security = off;
 
 DROP DATABASE universe;
 --
--- Name: periodic_table; Type: DATABASE; Schema: -; Owner: postgres
+-- Name: universe; Type: DATABASE; Schema: -; Owner: postgres
 --
 
 CREATE DATABASE universe WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
@@ -26,7 +26,7 @@ CREATE DATABASE universe WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE 
 
 ALTER DATABASE universe OWNER TO postgres;
 
-\connect periodic_table
+\connect universe
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
